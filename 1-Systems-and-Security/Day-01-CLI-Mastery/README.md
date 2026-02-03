@@ -12,6 +12,7 @@ Instead of using the root home directory, I established a structured workspace t
 - **Command:** `mkdir -p ~/projects/web-server/{logs,src,config,scripts}`
 - **Outcome:** Created a recursive directory tree for better project organization.
 ### **Sceernshot
+![System Audit Output](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/fe4858402eb2b7ef662b2d3dc2709f8d128f3995/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d1a.png)
 ----------------------------
 ### **2. Automated Log Cleanup (Log Rotation Simulation)**
 Managing disk space is a critical DevOps responsibility. I simulated a scenario where old logs fill up the disk and used the `find` utility to automate cleanup.
@@ -20,6 +21,7 @@ Managing disk space is a critical DevOps responsibility. I simulated a scenario 
 - **The Purge:** `find ~/projects/web-server/logs -type f -mtime +7 -delete`
 - **Result:** Successfully identified and removed only the files older than 7 days, preserving current logs.
 ### **Sceernshot
+![System Audit Output](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/fe4858402eb2b7ef662b2d3dc2709f8d128f3995/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d1b.jpg)
 --------------------------
 ### **3. AWS System Audit Script**
 I developed a Bash script (`audit.sh`) to provide a quick health snapshot of the EC2 instance.
@@ -28,7 +30,8 @@ I developed a Bash script (`audit.sh`) to provide a quick health snapshot of the
 - Fetches the **Public IP** using `curl`.
 - Displays **Memory Usage** in human-readable format.
 - Monitors **Disk Partitions** to prevent overflow.
-
+### **Screenshot
+![System Audit Output](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/fe4858402eb2b7ef662b2d3dc2709f8d128f3995/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d1c.jpg)
 ---
 
 ## **Sample Script Output**
