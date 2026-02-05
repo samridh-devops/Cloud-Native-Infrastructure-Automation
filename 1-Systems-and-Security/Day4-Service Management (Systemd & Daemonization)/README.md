@@ -56,4 +56,4 @@ systemctl status monitor.service
 o	Goal: The status should say active (running) without you touching anything!
 
  ---
-**Day 03 complete!** 
+**Day 04 complete!** 
