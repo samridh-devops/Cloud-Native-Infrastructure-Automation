@@ -10,7 +10,7 @@ Today, I transitioned from manual administration to **Automated Infrastructure M
 ### **Step 1: Script Development**
 Using `nano`, I created a Bash script to monitor the system state. I used `systemctl is-active` for precise service tracking.
 
-
+![vim nginx_monitor.sh](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/2c02716e323253a3a1143f394e736c310dcb6ca6/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d3c.jpg)
 
 --------
 
@@ -30,6 +30,7 @@ bash
  1. **Manually stop the service to trigger the script**
      ```bash
     sudo systemctl stop nginx
+    
 
  2. **Check the logs for the recovery alert**
       ```bash
@@ -38,6 +39,7 @@ bash
 3. **Confirm Nginx is back online**
      ```bash
      systemctl status nginx
+      ![systemctl statusnginx](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/2c02716e323253a3a1143f394e736c310dcb6ca6/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d3a.jpg)
 
 ---
 
@@ -45,6 +47,11 @@ bash
 This project demonstrates the transition from manual troubleshooting to **automated resilience**.
 
 *   **Automation is Key:** Instead of waiting for a user to report a site is down, the system fixes itself in under 60 seconds.
+*   1.	Verify it's dead: systemctl status nginx (It should show inactive).
+*   2.	Run your healer: ./nginx_monitor.sh
+*   3.	Check the evidence: cat /var/log/sys_check.log
+       ![./nginx_monitor.sh](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/2c02716e323253a3a1143f394e736c310dcb6ca6/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d3b.jpg)
+
 *   **Observability:** By logging every restart to `/var/log/sys_check.log`, I created an audit trail that helps identify if service instability is becoming a recurring trend.
 *   **Scalability:** This logic can be expanded to monitor databases (MySQL/PostgreSQL), disk space, or memory usage.
 
