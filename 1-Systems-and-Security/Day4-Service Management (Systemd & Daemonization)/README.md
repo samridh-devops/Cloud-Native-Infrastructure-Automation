@@ -9,36 +9,39 @@ Today, I moved from running scripts manually to managing System Services. I lear
 I defined a custom service unit file in /etc/systemd/system/. This file tells the Linux kernel how to treat my script as a background service.
 
 Bash
-sudo nano /etc/systemd/system/monitor.service
-Unit File Configuration:
+* sudo nano /etc/systemd/system/monitor.service
 
-Ini, TOML
-[Unit]
-Description=Nginx Self-Healing Monitor
-After=network.target nginx.service
+## **Step to Define the Service Logic**
+Paste the following configuration into the file. This tells Linux how to handle your script.
 
-[Service]
-Type=simple
-ExecStart=/home/ec2-user/nginx_monitor.sh
-Restart=always
-RestartSec=60
-User=ec2-user
 
-[Install]
-WantedBy=multi-user.target
+* Ini, TOML
+* [Unit]
+* Description=Nginx Self-Healing Monitor
+* After=network.target nginx.service
 
-## **Step 2:Enabling Persistence
+* [Service]
+* Type=simple
+* ExecStart=/home/ec2-user/nginx_monitor.sh
+* Restart=always
+* RestartSec=60
+* User=ec2-user
+
+* [Install]
+* WantedBy=multi-user.target
+
+## **Step 2:Enabling Persistence** 
 * 1.Unlike a manual script, a service can be "enabled" to start automatically during the boot sequence.
 
-* 2.Reload the system manager:
+* 2.Reload the systemd manager configuration:-
 
-   sudo systemctl daemon-reload
+  sudo systemctl daemon-reload
 
-* 3.Enable for boot-start:
+* 3.Enable the service (so it starts on boot):- 
 
   sudo systemctl enable monitor.service
 
-* 4.Start the process:
+* 4.Start the service now:-
 
   sudo systemctl start monitor.service
 ---
