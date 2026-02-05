@@ -14,8 +14,8 @@ Bash
 ## **Step to Define the Service Logic**
 Paste the following configuration into the file. This tells Linux how to handle your script.
 
+![healing-nginx](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/0d4bcbbd4814469fcb7b1d42e7aeb4e4f7313fd0/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d4a.jpg)
 
-* Ini, TOML
 * [Unit]
 * Description=Nginx Self-Healing Monitor
 * After=network.target nginx.service
@@ -46,13 +46,18 @@ Paste the following configuration into the file. This tells Linux how to handle 
   sudo systemctl start monitor.service
 ---
 
-## **Step 3:The Persistence Test
+## **Step 3:The Persistence Test**
 The ultimate test of a System Engineer is a Reboot.
 * 1.	Check Status: systemctl status monitor.service
+![status](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/0d4bcbbd4814469fcb7b1d42e7aeb4e4f7313fd0/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d4b.jpg)
+
 * 2.	Reboot the Instance: sudo reboot
+![reboot](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/0d4bcbbd4814469fcb7b1d42e7aeb4e4f7313fd0/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d4c.jpg)
+
 * 3.	Wait 1 minute, reconnect via SSH/EC2 Connect, and check again:
 Bash
 systemctl status monitor.service
+![monitor](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/0d4bcbbd4814469fcb7b1d42e7aeb4e4f7313fd0/1-Systems-and-Security/Day-01-CLI-Mastery/screenshots/d4d.jpg)
 o	Goal: The status should say active (running) without you touching anything!
 
  ---
