@@ -29,7 +29,7 @@ Paste the following configuration into the file. This tells Linux how to handle 
 
 * [Install]
 * WantedBy=multi-user.target
-
+---
 ## **Step 2:Enabling Persistence** 
 * 1.Unlike a manual script, a service can be "enabled" to start automatically during the boot sequence.
 
