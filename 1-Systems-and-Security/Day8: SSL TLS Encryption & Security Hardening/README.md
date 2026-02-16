@@ -102,21 +102,8 @@ Updated AWS Security Group to allow:
 - Port: 443  
 - Source: 0.0.0.0/0  
 
----
 
-## 📸 Project Proof
 
-### 🔹 HTTPS Enabled
-![HTTPS Working](screenshots/https-working.png)
-
-### 🔹 Nginx SSL Configuration
-![Nginx SSL Config](screenshots/nginx-ssl-config.png)
-
-### 🔹 HTTP to HTTPS Redirect
-![Redirect](screenshots/http-redirect.png)
-
-### 🔹 Security Group (Port 443 Open)
-![Security Group](screenshots/security-group-443.png)
 
 ---
 
