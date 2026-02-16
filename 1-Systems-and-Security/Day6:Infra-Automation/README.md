@@ -28,14 +28,13 @@ Linux Kernel → Bash Script → Dynamic HTML → Nginx → Public Browser Acces
 
 ## 📸 Project Proof
 
-### 🔹 EC2 Instance Running
-![EC2 Instance](screenshots/ec2-instance.png)
 
 ### 🔹 Live Dashboard (Public Access)
-![Live Dashboard](screenshots/live-dashboard.png)
+![EC2 Instance](https://raw.githubusercontent.com/samridh-devops/Cloud-Native-Infrastructure-Automation/main/1-Systems-and-Security/Day6%3AInfra-Automation/screenshort/ec2-instance.png)
+
 
 ### 🔹 Cron Job Automation
-![Cron Job](screenshots/cron-job.png)
+![Cron Job](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/d605497ef46896a0eed7b9dddb12e2d3878dc6fa/1-Systems-and-Security/Day6%3AInfra-Automation/screenshort/update_status.png)
 
 ---
 
