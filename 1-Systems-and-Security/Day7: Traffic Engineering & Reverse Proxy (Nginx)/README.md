@@ -32,13 +32,14 @@ The backend service is not publicly exposed.
 ## 📸 Project Proof
 
 ### 🔹 Reverse Proxy Working (Public Access)
-![Reverse Proxy Output](screenshots/reverse-proxy-output.png)
+![Reverse Proxy Output](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/381c3d2fd5f07fb088e925d78bae232a5ba4ce80/1-Systems-and-Security/Day7%3A%20Traffic%20Engineering%20%26%20Reverse%20Proxy%20(Nginx)/screenshort/Reverse_Proxy_Output.png)
 
 ### 🔹 Backend Python Server Running (Port 8080)
-![Python Backend](screenshots/python-backend.png)
+![Python Backend](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/381c3d2fd5f07fb088e925d78bae232a5ba4ce80/1-Systems-and-Security/Day7%3A%20Traffic%20Engineering%20%26%20Reverse%20Proxy%20(Nginx)/screenshort/Python%20Backend.png)
+
 
 ### 🔹 Nginx Proxy Configuration Test
-![Nginx Test](screenshots/nginx-test.png)
+![Nginx Test](https://github.com/samridh-devops/Cloud-Native-Infrastructure-Automation/blob/381c3d2fd5f07fb088e925d78bae232a5ba4ce80/1-Systems-and-Security/Day7%3A%20Traffic%20Engineering%20%26%20Reverse%20Proxy%20(Nginx)/screenshort/Nginx%20Proxy%20Config.png)
 
 ---
 
